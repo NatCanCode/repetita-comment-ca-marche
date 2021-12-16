@@ -1,0 +1,311 @@
+/* #F2F0F3 light grey */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+body{
+    background-color: #F2F0F3;
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    font-style: regular;
+    font-size: clamp(16px, 10vw, 18px);
+    line-height: 1.5;
+    cursor: none;
+}
+img{
+    /* garder ratio d'une image  */
+    object-fit: cover;
+    display: block;
+    max-width: 100%; /* si elle n'a plus la place, elle va se reduire */
+}
+div{
+    height: auto;
+}
+h1{
+    font-size: clamp(24px, 10vw, 48px);
+}
+h2{
+    font-size: clamp(22px, 10vw, 32px);
+}
+h3{
+    font-size: clamp(18px, 10vw, 28px);
+}
+p{
+    font-size: clamp(16px, 10vw, 18px);
+}
+.white{
+    color: #FFFFFF;
+}
+.red{
+    color: #E85F5B;
+}
+.green{
+    color: #53A790;
+}
+.blue{
+    color: #2445A2;
+}
+
+/* HEADER */
+.banner{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.title{
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+/* BREAK */
+.break{
+    height: 20vh;
+}
+
+/* MISSON */
+.mission{
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding-left: 8%;
+    padding-right: 10%;
+    /* padding: top right bottom left; */
+}
+.mission p{
+    padding-top: 8%;
+}
+.mission-section img{
+    width: 100%;
+}
+
+/* SECONDE MAIN */
+.seconde-main{
+    background-color: #E85F5B;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+    padding-left: 8%;
+    padding-right: 10%;
+}
+.seconde-main p{
+    padding-top: 8%;
+}
+.seconde-main-section img{
+    width: 100%;
+}
+
+/* VALEURS */
+.valeurs{
+    background-color: #F1DA88; 
+    padding: 5%;
+    height: auto;
+}
+.valeurs-title{
+    justify-content: center;
+    padding: 2% 5% 6% 5%;
+    /* padding: top right bottom left; */
+}
+.trois-valeurs{
+    justify-content: space-between;
+}
+.engages, .curieux, .optimistes{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 33vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.engages img{
+    width: 30%;
+}
+.curieux img{
+    width: 23%;
+}
+.engages h2, .curieux h2, .optimistes h2{
+    padding-top: 8%;
+}
+.engages p, .curieux p, .optimistes p{
+    padding-top: 8%;
+}
+
+/* MARQUES */
+.marques{
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding-left: 8%;
+    padding-right: 10%;
+    /* padding: top right bottom left; */
+}
+.marques p{
+    padding-top: 8%;
+}
+.marques-section img{
+    width: 100%;
+}
+
+/* CONSOMMATION */
+.consommation{
+    margin-bottom: 10%;
+}
+.consommation-bloc{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+.consommation-tagline{
+    background-color: #E85F5B;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8%;
+    height: 70%;
+}
+.consommation-logo{
+    background-color: #53A790;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 30%;
+}
+.consommation h1{
+    padding-top: 8%;
+}
+.logo-repetita{
+    height: 70%;
+}
+.autumn{
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    /* HEADER */
+    .banner{
+        height: 30vh;
+        width: 100%;
+        position: relative;
+    }
+    .banner img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .title{
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    
+    /* BREAK */
+    .break{
+        height: 10vh;
+    }
+    
+
+    /* MISSON */
+    .mission-section{
+        flex-direction: column;
+    }
+    .mission{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+    h1{
+        text-align: center;
+    }
+
+    /* SECONDE MAIN */
+    .seconde-main-section{
+        flex-direction: column-reverse;
+    }
+    .seconde-main{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+    h2{
+        text-align: center;
+    }
+
+    /* VALEURS */
+    .valeurs{
+        flex-direction: column;
+        padding: 13%;
+        height: auto;
+    }
+    .valeurs img{
+        padding-top: 25%;
+    }
+    .trois-valeurs{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .engages, .curieux, .optimistes{
+        justify-content: center;
+        max-width: 100vw;
+        padding: 0%;
+    }
+
+    /* MARQUES */
+    .marques-section{
+        flex-direction: column-reverse;
+    }
+    .marques{
+        justify-content: center;
+        max-width: 100%;
+        padding: 13%;
+    }
+
+    /* CONSOMMATION */
+    .consommation{
+        flex-direction: column;
+    }
+    .consommation-bloc{
+        max-width: 100%;
+    }
+    .consommation-tagline{
+        padding: 10%;
+        height: auto;
+    }
+    .consommation-logo{
+        padding: 20%;
+        height: auto;
+    }    
+}
+
+/* Breakpoints - most common screen size devices used in 2021:
+1920×1080
+1366×768 
+360×640 => Galaxy S5
+414×896 => iPhone 6/7/8+
+1536×864
+375×667 => iPhone X
+768x1024 => iPad */
