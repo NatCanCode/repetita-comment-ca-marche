@@ -79,8 +79,8 @@ p{
     height: 20vh;
 }
 
-/* MISSON */
-.mission{
+/* MADE IN FRANCE */
+.france{
     background-color: #53A790;
     flex-direction: column;
     justify-content: center;
@@ -89,66 +89,50 @@ p{
     padding-right: 10%;
     /* padding: top right bottom left; */
 }
-.mission p{
+.france p{
     padding-top: 8%;
 }
-.mission-section img{
+.france-section img{
     width: 100%;
 }
 
-/* SECONDE MAIN */
-.seconde-main{
+/* ANTI GASPI */
+.antigaspi{
     background-color: #E85F5B;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+    /* padding: top right bottom left; */
+    height: auto;
+}
+.antigaspi-title{
+    text-align: center;
+}
+.antigaspi p{
+    padding-top: 3%;
+}
+
+/* PARTICULIER */
+.particulier{
+    background-color: #F1DA88;
     flex-direction: column;
     justify-content: center;
     max-width: 50vw;
     padding-left: 8%;
     padding-right: 10%;
 }
-.seconde-main p{
+.particulier p{
     padding-top: 8%;
 }
-.seconde-main-section img{
+.particulier-section img{
     width: 100%;
 }
 
-/* VALEURS */
-.valeurs{
-    background-color: #F1DA88; 
-    padding: 5%;
-    height: auto;
+/* LIVRAISON */
+.livraison-section{
+    height: 130vh;
 }
-.valeurs-title{
-    justify-content: center;
-    padding: 2% 5% 6% 5%;
-    /* padding: top right bottom left; */
-}
-.trois-valeurs{
-    justify-content: space-between;
-}
-.engages, .curieux, .optimistes{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 33vw;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.engages img{
-    width: 30%;
-}
-.curieux img{
-    width: 23%;
-}
-.engages h2, .curieux h2, .optimistes h2{
-    padding-top: 8%;
-}
-.engages p, .curieux p, .optimistes p{
-    padding-top: 8%;
-}
-
-/* MARQUES */
-.marques{
+.livraison{
     background-color: #53A790;
     flex-direction: column;
     justify-content: center;
@@ -157,48 +141,27 @@ p{
     padding-right: 10%;
     /* padding: top right bottom left; */
 }
-.marques p{
+.livraison p{
     padding-top: 8%;
 }
-.marques-section img{
-    width: 100%;
-}
-
-/* CONSOMMATION */
-.consommation{
-    margin-bottom: 10%;
-}
-.consommation-bloc{
+.livraison-bloc{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 50%;
 }
-.consommation-tagline{
-    background-color: #E85F5B;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 8%;
-    height: 70%;
+.livraison-pic{
+    height: 100vh;
 }
-.consommation-logo{
-    background-color: #53A790;
+.livraison-logo{
+    background-color: #E85F5B;
     justify-content: center;
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
-    height: 30%;
-}
-.consommation h1{
-    padding-top: 8%;
+    height: 30vh;
 }
 .logo-repetita{
     height: 70%;
-}
-.autumn{
-    width: 100%;
 }
 
 /* MEDIA QUERIES */
