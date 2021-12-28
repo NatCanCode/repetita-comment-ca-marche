@@ -1,0 +1,235 @@
+/* #F2F0F3 light grey */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+body{
+    background-color: #F2F0F3;
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    font-style: regular;
+    font-size: clamp(16px, 10vw, 18px);
+    line-height: 1.5;
+    cursor: none;
+    padding: 5%;
+}
+img{
+    /* garder ratio d'une image  */
+    object-fit: cover;
+    display: block;
+    max-width: 100%; /* si elle n'a plus la place, elle va se reduire */
+}
+/* div{
+    height: auto;
+} */
+h1{
+    font-size: clamp(24px, 10vw, 48px);
+}
+h2{
+    font-size: clamp(22px, 10vw, 32px);
+}
+h3{
+    font-size: clamp(18px, 10vw, 28px);
+}
+p{
+    font-size: clamp(16px, 10vw, 18px);
+}
+.white{
+    color: #FFFFFF;
+}
+.red{
+    color: #E85F5B;
+}
+.green{
+    color: #53A790;
+}
+.blue{
+    color: #2445A2;
+}
+
+/* ORIGAMI HEADER BANNER */
+.origami-header-banner-shop-background{
+    background-position: center;
+    background: url('./img/bulbs.png') no-repeat center / cover;
+    /* always set a background-color if image is not available: */
+    background-color: #F1DA88;
+}
+.content{
+    padding: 200px 10%;
+}
+.title-container{
+    text-align: center;
+}
+.title{
+    color: #e85f5b;
+}
+
+/* BREAK */
+.break{
+    height: 10vh;
+}
+
+/* GRID */
+.comment-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: .9fr .5fr .9fr 1.3fr;
+    grid-template-areas:
+    "france france-pic"
+    "antigaspi antigaspi"
+    "particulier-pic particulier"
+    "livraison livraison-pic";
+}
+
+/* MADE IN FRANCE */
+.france{
+    grid-area: france;
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 10%;
+    height: 100%;
+    width: 100%;
+}
+.france p{
+    padding-top: 8%;
+}
+.france-pic{
+    grid-area: france-pic;
+    width: 100%;
+} 
+
+/* ANTI GASPI */
+.antigaspi{
+    grid-area: antigaspi;
+    background-color: #E85F5B;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+    /* padding: top right bottom left; */
+}
+.antigaspi-title{
+    text-align: center;
+}
+.antigaspi p{
+    padding-top: 8%;
+}
+
+/* PARTICULIER */
+.particulier{
+    grid-area: particulier;
+    background-color: #F1DA88;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 10%;
+    height: 100%;
+    width: 100%;
+}
+.particulier p{
+    padding-top: 8%;
+}
+.particulier-pic{
+    grid-area: particulier-pic;
+    width: 100%;
+}
+
+/* LIVRAISON */
+.livraison{
+    grid-area: livraison;
+    background-color: #53A790;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 10%;
+    /* padding: top right bottom left; */
+    height: 100%;
+    width: 100%;
+}
+.livraison p{
+    padding-top: 8%;
+}
+.livraison-bloc{
+    grid-area: livraison-pic;
+    flex-direction: column;
+}
+.livraison-pic{
+    height: 100%;
+}
+.livraison-logo{
+    background-color: #E85F5B;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 30vh;
+}
+.logo-repetita{
+    height: 70%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px){
+    .comment-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: .5fr .3fr .45fr .3fr .5fr .7fr .5fr;
+        grid-template-areas:
+        "france" 
+        "france-pic"
+        "antigaspi"
+        "particulier-pic"
+        "particulier"
+        "livraison"
+        "livraison-pic";
+    }
+    h1, h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .comment-grid{
+        grid-template-rows: .8fr .3fr .7fr .3fr .8fr 1fr .5fr;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .content {
+        padding: 100px 10%;
+    }
+    .comment-grid{
+        grid-template-rows: 1.6fr .3fr 1.3fr .3fr 1.4fr 2.1fr .5fr;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .comment-grid{
+        grid-template-rows: 1.7fr .3fr 1.4fr .3fr 1.7fr 2.4fr .5fr;
+    }    
+}
+
+@media screen and (max-width: 360px){
+    .comment-grid{
+        grid-template-rows: 1.8fr .3fr 1.4fr .3fr 1.9fr 2.6fr .5fr;
+    }    
+}
+
+/* Breakpoints - most common screen size devices used in 2021:
+1920×1080
+1366×768 
+360×640 => Galaxy S5
+414×896 => iPhone 6/7/8+
+1536×864
+375×667 => iPhone X
+768x1024 => iPad 
+1024x1366 => iPad pro */
