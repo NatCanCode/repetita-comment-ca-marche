@@ -199,7 +199,7 @@ p{
 
 @media screen and (max-width: 768px){
     .comment-grid{
-        grid-template-rows: .8fr .3fr .7fr .3fr .8fr 1fr .5fr;
+	grid-template-rows: .6fr .3fr .55fr .3fr .6fr .8fr .5fr;
     }
 }
 
@@ -208,7 +208,7 @@ p{
         padding: 100px 10%;
     }
     .comment-grid{
-        grid-template-rows: 1.6fr .3fr 1.3fr .3fr 1.4fr 2.1fr .5fr;
+	grid-template-rows: 1.4fr .3fr 1.2fr .3fr 1.3fr 2fr .5fr;
     }
 }
 
